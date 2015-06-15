@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test page</title>
+    <script src="//qa.polyfill.io/v1/polyfill.js?features=Event"></script>
+    <script src="./jquery.splendid.textchange.js"></script>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="input">
+    </form>
+    <script>
+        document.getElementById('input').addEventListener('input', function(e) {
+            alert('Input event fired on ' + e.id);
+        });
+    </script>
+</body>
+</html>
