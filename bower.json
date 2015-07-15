@@ -1,0 +1,22 @@
+{
+  "name": "input-event-polyfill",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jamesnicholls/input-event-polyfill",
+  "authors": [
+    "James Nicholls <james.nicholls@ft.com>"
+  ],
+  "description": "Polyfill for the input event in IE 8 and 9",
+  "main": "main.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
