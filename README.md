@@ -1,31 +1,3 @@
-# jQuery “splendid textchange” plugin
+A polyfill for the `input` event in IE 8 and 9. It is based on Ben Alperts "near-perfect oninput shim for IE 8 and 9", but without the jQuery, and it will actual `input` events, not custom equivalents.
 
-This plugin provides a synthetic event called textchange which simulates the input event in all browsers, abstracting over cross-browser differences.
-
-Simply do:
-
-```js
-// <input type="text" id="monkey">
-
-$("#monkey").on("textchange", function() {
-    // ...
-});
-```
-
-and you'll receive events for every `value` change, just as you would if the input event worked properly in all browsers.
-
-See my blog post “[A near-perfect oninput shim for IE 8 and 9](http://benalpert.com/2013/06/18/a-near-perfect-oninput-shim-for-ie-8-and-9.html)” for more details.
-
-## Support
-
-Supports IE 8, IE 9, and modern browsers.
-
-Tested in jQuery 1.10; should work in 1.7+.
-
-## Why “splendid”?
-
-Zurb already has an [unrelated textchange plugin](http://zurb.com/playground/jquery-text-change-custom-event) and I suck at names, sorry.
-
-## License
-
-(c) 2013 Ben Alpert, released under the MIT license.
+As IE 8 and 9 don't allow attaching event handlers to unrecognised event names, this polyfill will requires an Event polyfill. One is available on the [polyfill service](https://cdn.polyfill.io/v1/docs/).
